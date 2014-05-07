@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\camera\camera_movement.cs" />
      <Compile Include="Assets\monster\monster_movement.cs" />
+     <Compile Include="Assets\player\player_death.cs" />
      <Compile Include="Assets\player\player_movement.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
   </ItemGroup>
