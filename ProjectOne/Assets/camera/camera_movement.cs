@@ -26,11 +26,22 @@ public class camera_movement : MonoBehaviour {
 						timer = timerSet;
 						position += 2.0f;
 						if (Random.value > 0.85f) {
-								Instantiate (Floor, new Vector3 (position + 10.0f, -3.8F, -0.1f), gameObject.transform.rotation);
+								Instantiate (Floor, new Vector3 (position + 10.0f, -3.8f, -0.1f), gameObject.transform.rotation);
 						}
-					//	if (Random.value > 0.85f) {
-					//			Instantiate (Earth, new Vector3 (position + 10.0f, 1, 0f), gameObject.transform.rotation);
-					//	}
+						if (Random.value > 0.85f) {
+								Instantiate (Earth, new Vector3 (position + 10.0f, -1.5f, 0f), gameObject.transform.rotation);
+						}
+						if (Random.value > 0.85f) {
+								Instantiate (Earth, new Vector3 (position + 10.0f, 0f, 0f), gameObject.transform.rotation);
+						}
+						if (Random.value > 0.85f) {
+								Instantiate (Earth, new Vector3 (position + 10.0f, 1.5f, 0f), gameObject.transform.rotation);
+						}
+						if (Random.value > 0.85f) {
+								Instantiate (Earth, new Vector3 (position + 10.0f, 3f, 0f), gameObject.transform.rotation);
+						}
+
+
 					//	if (Random.value > 0.85f) {
 					//			Instantiate (Earth, new Vector3 (position + 10.0f, -2f, 0f), gameObject.transform.rotation);
 					//	} 
