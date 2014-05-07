@@ -1,0 +1,6 @@
+ProjectOne/Temp
+ProjectOne/obj
+ProjectOne/library
+*.csproj
+*.unityproj
+*.sln
