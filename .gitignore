@@ -1,6 +1,7 @@
 ProjectOne/Temp
 ProjectOne/obj
 ProjectOne/library
+ProjectOne/Library
 *.csproj
 *.unityproj
 *.sln

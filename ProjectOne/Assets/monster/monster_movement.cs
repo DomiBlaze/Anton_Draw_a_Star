@@ -5,6 +5,7 @@ public class monster_movement : MonoBehaviour {
 
 	public float Speed = 10.0f;
 	public GameObject Player;
+	bool stop = false;
 
 	// Use this for initialization
 	void Start () {
@@ -15,14 +16,17 @@ public class monster_movement : MonoBehaviour {
 	void Update () {
 		transform.position = new Vector2 (transform.position.x + Speed * Time.deltaTime, 
 		                                  transform.position.y);
+		if (stop == true) {
+			Speed -= Time.deltaTime*10;
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
 				if (other.gameObject == Player) {
 						Destroy (Player);
-			            Speed = 0f;
-			            //creating another earth unit
+						stop = true;
+			          
 						//Destroy (gameObject);
 						//Debug.Log("something has hit me");
 		}else{Destroy(other.gameObject);
