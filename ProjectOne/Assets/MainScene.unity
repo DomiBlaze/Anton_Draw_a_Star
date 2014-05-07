@@ -777,10 +777,10 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_Poly:
     m_Paths:
-    - - {x: -.126034886, y: -.101988629}
-      - {x: -.091091983, y: -.120019168}
-      - {x: -.0426316075, y: -.267500043}
-      - {x: -.210991383, y: -.268978775}
+    - - {x: .0959818214, y: -.0819887146}
+      - {x: .256061465, y: -.0966859609}
+      - {x: .425621867, y: -.454165339}
+      - {x: -.134294704, y: -.468977302}
       - {x: -.154737592, y: -.122543238}
 --- !u!23 &1011311168
 Renderer:
@@ -817,8 +817,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1011311166}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: .212465376, y: -2.52302694, z: 0}
+  m_LocalScale: {x: 1.09000003, y: 1.32000005, z: 1}
   m_Children:
   - {fileID: 1081516505}
   m_Father: {fileID: 0}
@@ -877,7 +877,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1081516504}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.120881997, y: -.239161834, z: -2.17016602}
+  m_LocalPosition: {x: .133428082, y: -.455827057, z: -2.17016602}
   m_LocalScale: {x: .333333343, y: .333333343, z: 1}
   m_Children: []
   m_Father: {fileID: 1011311170}
