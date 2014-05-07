@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\camera\camera_movement.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\player\player_movement.cs">
     <Files>
-      <File FileName="Assets\camera\camera_movement.cs" Line="29" Column="65" />
+      <File FileName="Assets\player\player_movement.cs" Line="42" Column="1" />
+      <File FileName="Assets\monster\monster_movement.cs" Line="31" Column="36" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
