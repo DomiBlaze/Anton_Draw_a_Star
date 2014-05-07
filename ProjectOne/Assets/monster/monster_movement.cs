@@ -16,8 +16,13 @@ public class monster_movement : MonoBehaviour {
 	void Update () {
 		transform.position = new Vector2 (transform.position.x + Speed * Time.deltaTime, 
 		                                  transform.position.y);
+
 		if (stop == true) {
 			Speed -= Time.deltaTime*10;
+			if (Speed < 0){
+				Speed = 0;
+			}
+		
 		}
 	}
 
