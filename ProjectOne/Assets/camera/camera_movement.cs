@@ -4,6 +4,7 @@ using System.Collections;
 public class camera_movement : MonoBehaviour {
 	public float Speed = 10.0f ;
 	public GameObject Earth;
+	public GameObject Floor;
 	public GameObject Player;
 	public float timerSet = 0.1f;
 	float position = 0f;
@@ -21,18 +22,18 @@ public class camera_movement : MonoBehaviour {
 		                                  0f, Player.transform.position.z - 10.0f);
 				}
 				if (timer < 0) {
-						Instantiate (Earth, new Vector3 (position + 10.0f, -4.7f, 0f), gameObject.transform.rotation);
+						Instantiate (Floor, new Vector3 (position + 10.0f, -5f, 0f), gameObject.transform.rotation);
 						timer = timerSet;
-						position += 2.5f;
+						position += 2.0f;
 						if (Random.value > 0.85f) {
-								Instantiate (Earth, new Vector3 (position + 10.0f, 2.35f, 0f), gameObject.transform.rotation);
+								Instantiate (Floor, new Vector3 (position + 10.0f, -3.8F, -0.1f), gameObject.transform.rotation);
 						}
-						if (Random.value > 0.85f) {
-								Instantiate (Earth, new Vector3 (position + 10.0f, 0, 0f), gameObject.transform.rotation);
-						}
-						if (Random.value > 0.85f) {
-								Instantiate (Earth, new Vector3 (position + 10.0f, -2.35f, 0f), gameObject.transform.rotation);
-						} 
+					//	if (Random.value > 0.85f) {
+					//			Instantiate (Earth, new Vector3 (position + 10.0f, 1, 0f), gameObject.transform.rotation);
+					//	}
+					//	if (Random.value > 0.85f) {
+					//			Instantiate (Earth, new Vector3 (position + 10.0f, -2f, 0f), gameObject.transform.rotation);
+					//	} 
 				}
 				else
 						timer -= Time.deltaTime;
