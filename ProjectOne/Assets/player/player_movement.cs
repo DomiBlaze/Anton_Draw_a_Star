@@ -15,6 +15,7 @@ public class player_movement : MonoBehaviour {
 	bool topped;
 	float topRadius = 0.5f;
 	float stop;
+	float inAir;
 
 	// Use this for initialization
 	void Start () {
@@ -48,8 +49,10 @@ public class player_movement : MonoBehaviour {
 		transform.position = new Vector2 (transform.position.x + Input.GetAxis("Horizontal") * Speed * Time.deltaTime, 
 		                                  transform.position.y);
 		//jumping
-		if (Input.GetKeyDown (KeyCode.UpArrow) && grounded)
-			rigidbody2D.AddForce (new Vector2(0,jumpForce));
+		if (Input.GetKeyDown (KeyCode.UpArrow) && grounded && Time.time > inAir) {
+						inAir = Time.time +0.2f;
+						rigidbody2D.AddForce (new Vector2 (0, jumpForce));
+				}
 
 
 
