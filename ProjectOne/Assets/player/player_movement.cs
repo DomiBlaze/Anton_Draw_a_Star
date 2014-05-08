@@ -14,6 +14,7 @@ public class player_movement : MonoBehaviour {
 	float groundRadius = 0.5f;
 	bool topped;
 	float topRadius = 0.5f;
+	float stop;
 
 	// Use this for initialization
 	void Start () {
@@ -23,7 +24,21 @@ public class player_movement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//am I on ground?
-		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
+		if (gameObject.rigidbody2D.gravityScale == - 1.7f) {
+			if (jumpForce>0) {
+				jumpForce = (-1) * jumpForce;
+				stop = Time.time + 3f;}
+						grounded = true; //CHANGE THIS
+			if (Time.time > stop) {
+				gameObject.rigidbody2D.gravityScale = 1.7f;
+				jumpForce = (-1) * jumpForce;
+			}
+		} 
+		else {
+						grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
+		}
+		//
+
 		//am I under tile?
 		topped = Physics2D.OverlapCircle (topCheck.position, topRadius, whatIsGround);
 	//	Physics2D.OverlapCircleNonAlloc (topCheck.position, topRadius, array1 ,whatIsGround);
@@ -36,7 +51,13 @@ public class player_movement : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.UpArrow) && grounded)
 			rigidbody2D.AddForce (new Vector2(0,jumpForce));
 
+
+
 	}
+
+//	void Bonus_top () {
+//		gameObject.rigidbody2D.gravityScale = -1.7
+//	}
 
 	
 

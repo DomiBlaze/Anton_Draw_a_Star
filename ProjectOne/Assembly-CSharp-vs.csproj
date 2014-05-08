@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\bonuses\floor_is_top.cs" />
      <Compile Include="Assets\camera\camera_movement.cs" />
      <Compile Include="Assets\earth\earth_panel.cs" />
      <Compile Include="Assets\monster\monster_movement.cs" />

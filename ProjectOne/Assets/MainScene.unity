@@ -170,7 +170,9 @@ MonoBehaviour:
   Earth: {fileID: 100000, guid: aae5c0696ee39004d8c3d51ce4484437, type: 2}
   Floor: {fileID: 100000, guid: d4992e4e23735834e937e7d7570d7229, type: 2}
   Player: {fileID: 1011311166}
+  Bonus1: {fileID: 100000, guid: 1d7784c65c0150f428f1fafadac39614, type: 2}
   timerSet: .100000001
+  bonus1BlockTimerSet: 3
 --- !u!1 &204325959
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,7 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c41cbaed6a83c04688259678c6a83aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 9.5
+  Speed: 9
   Player: {fileID: 1011311166}
 --- !u!50 &204325965
 Rigidbody2D:
@@ -681,7 +683,7 @@ GameObject:
   - 60: {fileID: 1011311167}
   m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -813,7 +815,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 1081516504}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Radius: .100000001
   m_Center: {x: 0, y: 0}
 --- !u!1001 &1087318575
@@ -1127,7 +1129,7 @@ GameObject:
   - 58: {fileID: 1658792893}
   m_Layer: 8
   m_Name: topCheck
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
