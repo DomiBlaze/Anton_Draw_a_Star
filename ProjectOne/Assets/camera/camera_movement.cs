@@ -6,6 +6,7 @@ public class camera_movement : MonoBehaviour {
 	public GameObject Earth;
 	public GameObject Floor;
 	public GameObject Player;
+	public GameObject SpeedBoost;
 	public float timerSet = 0.1f;
 	float position = 0f;
 	float timer = 0f;
